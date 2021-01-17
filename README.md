@@ -25,7 +25,7 @@ $ conda install -c open3d-admin -c conda-forge open3d
 $ python -c "import open3d as o3d; print(o3d)"
 ```
 
-## Important
+# Version
 
 Do note that this tool was built with version 0.11.0, so there may be incompatibilities with later versions of the library online (current version is 0.12.0) which I have not tested. This repository contains version 0.11.0, so you can use that if you run into trouble.
 
