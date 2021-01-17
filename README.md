@@ -31,7 +31,7 @@ Do note that this tool was built with version 0.11.0, so there may be incompatib
 
 # Support
 
-If you enjoy this or other of my open-source projects, you can [make a donation]
-(https://darienbrito.com/support/)
+If you enjoy this or other of my open-source projects, you can (make a donation)
+[https://darienbrito.com/support/]
 
 Darien Brito, 2021
