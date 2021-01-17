@@ -1,12 +1,11 @@
 # TDAzureMerger
  A component to merge point clouds from the Kinect Azure devices
- 
-The method used here is based on the open3D library:
-http://www.open3d.org/
 
-This method is very fast and easy to use. Best of all is that it is fully automatic, so you don’t need any boards like chess patterns or charuco. The current version has however some limitations as it works really well for situations where you have enough overlap between kinects from a similar angle, but does not work when you have the kinects in angles bigger then 90 degrees, since it depends on overlapping data from similar pov's.
+The technique used here is based on the open3D library: http://www.open3d.org/
 
-There are workarounds for that, as I have managed to do calibrate Kinects from any position by using intermediate matrices. That option however is not yet included in this version, since that needs more work to function as a general purpose solution. More updates to come later on!
+This method is very fast and easy to use. Best of all is that it is fully automatic, so you don’t need any boards like chess patterns or charuco boards. The current version has however some limitations as it works really well for situations where you have enough overlap between Kinects from a similar angle, but does not work when you have the Kinects in angles bigger than 90 degrees, since it depends on overlapping data from similar pov's.
+
+There are workarounds for that, as I have managed to do calibrate Kinects from any position by using intermediate matrices. That option however is not yet included in this version, since that needs more work to function as a general-purpose solution. More updates to come later on.
 
 # Installation
 
