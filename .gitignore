@@ -1,0 +1,7 @@
+# Compressed RAR files
+*.rar
+
+# Previz folder ignores
+Backup/
+
+
