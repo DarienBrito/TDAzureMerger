@@ -3,9 +3,11 @@
 
 The technique used here is based on the open3D library: http://www.open3d.org/
 
-This method is very fast and easy to use. Best of all is that it is fully automatic, so you don’t need any boards like chess patterns or charuco boards. The current version has however some limitations as it works really well for situations where you have enough overlap between Kinects from a similar angle, but does not work when you have the Kinects in angles bigger than 90 degrees, since it depends on overlapping data from similar pov's.
+# Limitations
 
-There are workarounds for that, as I have managed to do calibrate Kinects from any position by using intermediate matrices. That option however is not yet included in this version, since that needs more work to function as a general-purpose solution. More updates to come later on.
+The current version has however some limitations. It only works really well for situations where you have enough overlap between Kinects from a similar angle, but does not work when you have the Kinects in angles bigger than 90 degrees, since it depends on overlapping data from similar pov's (it won't work with cameras facing each other for instance)
+
+There are workarounds for that. I have managed to calibrate Kinects from any position by using intermediate matrices in calibration. That option however is not yet included in this version, since that needs more work to function as a general-purpose solution. More updates to come later on.
 
 # Installation
 
