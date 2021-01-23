@@ -11,9 +11,13 @@ There are workarounds for that. I have managed to calibrate Kinects from any pos
 
 # Installation
 
-You need to have a working version of the open3D library in TouchDesigner.
+You need to have a working version of the open3D library in TouchDesigner. This repository contains version 0.11.0, so you can use that directly by copying it to your TouchDesigner site packages folder, usually in a path like this:
 
-You can pip install it:
+```
+C:\Program Files\Derivative\TouchDesigner.2020.28110\bin\Lib\site-packages
+```
+
+You can also try pip or conda install:
 
 ```
 # Install Open3D stable release with pip
@@ -25,10 +29,7 @@ $ conda install -c open3d-admin -c conda-forge open3d
 # Test the installation
 $ python -c "import open3d as o3d; print(o3d)"
 ```
-
-# Version
-
-Do note that this tool was built with version 0.11.0, so there may be incompatibilities with later versions of the library online (current version is 0.12.0) which I have not tested. This repository contains version 0.11.0, so you can use that if you run into trouble.
+Do note however that this tool was built with version 0.11.0, so there may be incompatibilities with later versions of the library online (current version is 0.12.0) which I have not tested. Safest is to simply use version 0.11.0 (the one provided with this package).
 
 # Support
 
