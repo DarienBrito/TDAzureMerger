@@ -3,6 +3,11 @@
 
 The technique used here is based on the open3D library: http://www.open3d.org/
 
+# Usage
+
+You can see how to use the tool in the following video:
+https://vimeo.com/501525725
+
 # Limitations
 
 The current version has however some limitations. It only works really well for situations where you have enough overlap between Kinects from a similar angle, but does not work when you have the Kinects in angles bigger than 90 degrees, since it depends on overlapping data from similar pov's (it won't work with cameras facing each other for instance)
