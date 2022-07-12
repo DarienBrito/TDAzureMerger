@@ -75,7 +75,7 @@ class extAzureCalibration:
 		"""
 		distance_threshold = voxel_size * 1.5
 		result = o3d.pipelines.registration.registration_ransac_based_on_feature_matching(
-		source_down, target_down, source_fpfh, target_fpfh, distance_threshold,
+		source_down, target_down, source_fpfh, target_fpfh, True, distance_threshold,
 		o3d.pipelines.registration.TransformationEstimationPointToPoint(False),
 			4, [
 				o3d.pipelines.registration.CorrespondenceCheckerBasedOnEdgeLength(
