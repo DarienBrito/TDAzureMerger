@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: open3d
+Version: 0.11.0
+Summary: ['Open3D is an open-source library that supports rapid development of software that deals with 3D data.']
+Home-page: http://www.open3d.org
+Author: Open3D Team
+Author-email: info@open3d.org
+License: MIT
+Project-URL: Documentation, http://www.open3d.org/docs
+Project-URL: Source code, https://github.com/intel-isl/Open3D
+Project-URL: Issues, https://github.com/intel-isl/Open3D/issues
+Keywords: 3D reconstruction point cloud mesh RGB-D visualization
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Education
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Classifier: Topic :: Multimedia :: Graphics :: Capture
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Classifier: Topic :: Multimedia :: Graphics :: Viewers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: ipywidgets
+Requires-Dist: widgetsnbextension
+Requires-Dist: notebook
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+.. _introduction:
+
+About This Project
+#######################
+
+Open3D is an open-source library that supports rapid development of software
+that deals with 3D data. The Open3D frontend exposes a set of carefully selected
+data structures and algorithms in both C++ and Python. The backend is highly
+optimized and is set up for parallelization. We welcome contributions from the
+open-source community.
+
+If you use Open3D in an academic project, please cite our paper:
+::
+
+    @article{Zhou2018,
+        author    = {Qian-Yi Zhou and Jaesik Park and Vladlen Koltun},
+        title     = {{Open3D}: {A} Modern Library for {3D} Data Processing},
+        journal   = {arXiv:1801.09847},
+        year      = {2018},
+    }
+
+Core features
+======================
+
+* Basic 3D data structures
+* Basic 3D data processing algorithms
+* Scene reconstruction
+* Surface alignment
+* 3D visualization
+* Python binding
+
+Supported platforms
+======================
+
+The package has been tested on:
+
+* Ubuntu 16.04, Ubuntu 18.04
+* Windows 10 64-bit
+* macOS High Sierra and above
+
+With Python version:
+* 2.7
+* 3.5
+* 3.6
+* 3.7
+
+Resources
+======================
+
+* Website: `www.open3d.org <http://www.open3d.org>`_
+* Code: `github.com/intel-isl/Open3D <https://github.com/intel-isl/Open3D>`_
+* Document: `www.open3d.org/docs <http://www.open3d.org/docs>`_
+* License: `The MIT license <https://opensource.org/licenses/MIT>`_
+
+
+
