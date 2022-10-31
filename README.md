@@ -36,9 +36,4 @@ $ python -c "import open3d as o3d; print(o3d)"
 ```
 Do note however that this tool was built with version 0.11.0, so there may be incompatibilities with later versions of the library online (current version is 0.12.0) which I have not tested. Safest is to simply use version 0.11.0 (the one provided with this package).
 
-# Support
-
-If you enjoy this or other of my open-source projects, you can [make a donation]
-(https://darienbrito.com/support/)
-
 Darien Brito, 2021
