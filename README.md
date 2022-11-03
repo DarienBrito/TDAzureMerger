@@ -35,7 +35,7 @@ $ conda install -c open3d-admin -c conda-forge open3d
 $ python -c "import open3d as o3d; print(o3d)"
 ```
 
-Remember that this tool was built with version 0.16.0 of the library, for python 3.9 (the one in use current TD build), so to install via pip, your local python install must be version 3.9, otherwise there may be incompatibilities. Please make sure you have this setup correctly before submiting an issue.
+Remember that this tool was built with version 0.16.0 of the library, for python 3.9 (the one in use current TD build), so **to install via pip, your local python install must be version 3.9, otherwise there may be incompatibilities**. Please make sure you have this setup correctly before submiting an issue.
 
 # Support
 
