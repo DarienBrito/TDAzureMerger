@@ -41,14 +41,14 @@ Remember that this tool was built with version 0.16.0 of the library, for python
 
 It helps me a lot if you can follow me on:
 
-[Instagram](https://www.instagram.com/darien.brito/)
+[Instagram](https://www.instagram.com/darien.brito/) |
 [Twitter](https://twitter.com/DarienBrito)
 
 If you would like to go one step further with your support, I highly encourage you to make a donation to one of the following organizations. They are doing important and urgent work and need your donation more than I do:
 
-[Refugees International](https://www.refugeesinternational.org/)
-[Coalition of Rainforest Nations](https://www.rainforestcoalition.org/)
-[Amazon Frontlines](https://amazonfrontlines.org/)
+[Refugees International](https://www.refugeesinternational.org/) |
+[Coalition of Rainforest Nations](https://www.rainforestcoalition.org/) |
+[Amazon Frontlines](https://amazonfrontlines.org/) |
 [Wikipedia](https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=NL&uselang=en&utm_medium=spontaneous&utm_source=fr-redir&utm_campaign=spontaneous)
 
 Sincerely,
