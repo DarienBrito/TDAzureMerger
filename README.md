@@ -39,7 +39,7 @@ Remember that this tool was built with version 0.16.0 of the library, for python
 
 # Support
 
-You you can follow me on:
+You can follow me on:
 
 [Instagram](https://www.instagram.com/darien.brito/) |
 [Twitter](https://twitter.com/DarienBrito)
