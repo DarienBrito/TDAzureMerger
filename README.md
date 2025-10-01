@@ -16,13 +16,13 @@ There are workarounds for that. I have managed to calibrate Kinects from any pos
 
 # Installation
 
-You need to have a working version of the open3D library in TouchDesigner. This build has been updated to work with version 0.16.0. You may go to this website and download the corresponding open3D version for **python 3.9, which is the currently supported python build in TouchDesigner**. There are two ways to install open3D for work within TD. One of them is to download a build from here [Open3D docs](http://www.open3d.org/docs/release/getting_started.html), which you can then use by copying it to your TouchDesigner site packages folder, usually in a path like this:
+You need to have a working version of the open3D library in TouchDesigner. This build has been updated to work with version 0.19.0. You may go to this website and download the corresponding open3D version for **python 3.11, which is the currently supported python build in TouchDesigner**. There are two ways to install open3D for work within TD. One of them is to download a build from here [Open3D docs](http://www.open3d.org/docs/release/getting_started.html), which you can then use by copying it to your TouchDesigner site packages folder (not recommended), usually in a path like this:
 
 ```
 C:\Program Files\Derivative\TouchDesigner\bin\Lib\site-packages
 ```
 
-You can also try the easier way, which is installing via pip or conda:
+Or you can also try the easier and recommended way, which is installing via pip or conda:
 
 ```
 # Install Open3D stable release with pip
@@ -35,7 +35,9 @@ $ conda install -c open3d-admin -c conda-forge open3d
 $ python -c "import open3d as o3d; print(o3d)"
 ```
 
-Remember that this tool was built with version 0.16.0 of the library, for python 3.9 (the one in use current TD build), so **to install via pip, your local python install must be version 3.9, otherwise there may be incompatibilities**. Please make sure you have this setup correctly before submiting an issue.
+Remember that this tool was built with version 0.19.0 of the library, for python 3.11 (the one in use current TD build), so **to install via pip, your local python install must be version 3.11, otherwise there may be incompatibilities**. Please make sure you have this setup correctly before submiting an issue.
+
+If you are not familiar with how Python works in TD, please refer to this article first: [Python in TouchDesigner](https://derivative.ca/UserGuide/Python)
 
 # Support
 
@@ -44,14 +46,10 @@ You can follow me on:
 [Instagram](https://www.instagram.com/darien.brito/) |
 [Twitter](https://twitter.com/DarienBrito)
 
-If you would like to go one step further with your support, I highly encourage you to make a donation to one of the following organizations. They are doing important and urgent work and need your donation more than I do:
+If you would like to go one step further with your support, you can subscribe here:
+[Patreon](https://www.patreon.com/c/darienbrito)
 
-[Refugees International](https://www.refugeesinternational.org/) |
-[Coalition for Rainforest Nations](https://www.rainforestcoalition.org/) |
-[Amazon Frontlines](https://amazonfrontlines.org/) |
-[Wikipedia](https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=NL&uselang=en&utm_medium=spontaneous&utm_source=fr-redir&utm_campaign=spontaneous)
-
-Sincerely,
+Best,
 Darien
 
-Darien Brito, 2022
+Darien Brito, 2025
