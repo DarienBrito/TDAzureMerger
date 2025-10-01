@@ -1,55 +1,81 @@
 # TDAzureMerger
- A component to merge point clouds from the Kinect Azure devices
+A TouchDesigner component for merging point clouds from Kinect Azure devices using the Open3D library.
 
-The technique used here is based on the open3D library: http://www.open3d.org/
+## Overview
+TDAzureMerger is a tool designed to combine point clouds captured by multiple Kinect Azure devices into a single, cohesive point cloud. Built on the robust [Open3D library](http://www.open3d.org/) (version 0.19.0), it integrates seamlessly with TouchDesigner for real-time 3D data processing. This tool is ideal for applications requiring high-fidelity point cloud data from multiple perspectives.
 
-# Usage
+## Usage
+To see TDAzureMerger in action, check out this instructional video:  
+[Watch on Vimeo](https://vimeo.com/501525725)
 
-You can see how to use the tool in the following video:
-https://vimeo.com/501525725
+The component is designed for straightforward integration into TouchDesigner projects. It processes point cloud data from Kinect Azure devices, aligning and merging them based on overlapping regions. Refer to the video for a step-by-step guide on setup and usage.
 
-# Limitations
+## Features
+- **Point Cloud Merging**: Combines data from multiple Kinect Azure devices into a unified point cloud.
+- **Open3D Integration**: Leverages Open3D (v0.19.0) for robust point cloud processing.
+- **TouchDesigner Compatibility**: Optimized for Python 3.11, the default Python version in the latest TouchDesigner builds.
+- **Real-Time Processing**: Suitable for interactive installations and live performances.
 
-The current version has however some limitations. It only works really well for situations where you have enough overlap between Kinects from a similar angle, but does not work when you have the Kinects in angles bigger than 90 degrees, since it depends on overlapping data from similar pov's (it won't work with cameras facing each other for instance)
+## Limitations
+The current version of TDAzureMerger has some constraints:
+- **Overlap Requirement**: Works best when Kinect devices have significant overlap and are positioned at similar angles (less than 90 degrees apart). It struggles with configurations where cameras face each other directly.
+- **Calibration Workaround**: Support for arbitrary Kinect positions (using intermediate calibration matrices) is under development and not yet included in this version.
+- **Future Updates**: Enhanced calibration and general-purpose functionality are planned for future releases.
 
-There are workarounds for that. I have managed to calibrate Kinects from any position by using intermediate matrices in calibration. That option however is not yet included in this version, since that needs more work to function as a general-purpose solution. More updates to come later on.
+For scenarios requiring non-overlapping or opposing camera setups, stay tuned for updates addressing these challenges.
 
-# Installation
+## Installation
+To use TDAzureMerger, you need Open3D (v0.19.0) installed for Python 3.11, which is the Python version supported by the latest TouchDesigner builds. Follow these steps:
 
-You need to have a working version of the open3D library in TouchDesigner. This build has been updated to work with version 0.19.0. You may go to this website and download the corresponding open3D version for **python 3.11, which is the currently supported python build in TouchDesigner**. There are two ways to install open3D for work within TD. One of them is to download a build from here [Open3D docs](http://www.open3d.org/docs/release/getting_started.html), which you can then use by copying it to your TouchDesigner site packages folder (not recommended), usually in a path like this:
+### Prerequisites
+- Ensure your local Python installation is version **3.11** to avoid compatibility issues.
+- Install TouchDesigner (latest build recommended).
+- Familiarize yourself with Python integration in TouchDesigner: [Python in TouchDesigner](https://derivative.ca/UserGuide/Python).
 
+### Installing Open3D
+There are two methods to install Open3D:
+
+#### Option 1: Install via pip (Recommended)
+Run the following command in a terminal with Python 3.11:
+```
+pip install open3d==0.19.0
+```
+
+#### Option 2: Install via Conda
+If you prefer Conda, use:
+```
+conda install -c open3d-admin -c conda-forge open3d=0.19.0
+```
+
+#### Option 3: Manual Installation (Not Recommended)
+Download Open3D (v0.19.0) from the [Open3D documentation](http://www.open3d.org/docs/release/getting_started.html) and copy the library to TouchDesigner’s site-packages folder, typically located at:
 ```
 C:\Program Files\Derivative\TouchDesigner\bin\Lib\site-packages
 ```
 
-Or you can also try the easier and recommended way, which is installing via pip or conda:
-
+#### Verify Installation
+Test your Open3D installation by running:
 ```
-# Install Open3D stable release with pip
-$ pip install open3d
-
-# Install Open3D stable release with Conda
-$ conda install -c open3d-admin -c conda-forge open3d
-
-# Test the installation
-$ python -c "import open3d as o3d; print(o3d)"
+python -c "import open3d as o3d; print(o3d.__version__)"
 ```
+Ensure the output shows `0.19.0`.
 
-Remember that this tool was built with version 0.19.0 of the library, for python 3.11 (the one in use current TD build), so **to install via pip, your local python install must be version 3.11, otherwise there may be incompatibilities**. Please make sure you have this setup correctly before submiting an issue.
+### Troubleshooting
+- If you encounter issues, verify that your Python version is 3.11.
+- Ensure Open3D is installed in the Python environment used by TouchDesigner.
+- For additional help, consult the [TouchDesigner Python Guide](https://derivative.ca/UserGuide/Python).
 
-If you are not familiar with how Python works in TD, please refer to this article first: [Python in TouchDesigner](https://derivative.ca/UserGuide/Python)
+## Support
+For updates, tips, and community interaction, follow me on:  
+- [Instagram](https://www.instagram.com/darien.brito/)  
+- [Twitter](https://twitter.com/DarienBrito)  
 
-# Support
+To support further development of TDAzureMerger and related projects, consider subscribing on:  
+- [Patreon](https://www.patreon.com/c/darienbrito)
 
-You can follow me on:
+## Contributing
+Feedback and contributions are welcome! If you encounter issues or have suggestions, please submit them via the project’s repository (link to be added in future updates) or contact me directly.
 
-[Instagram](https://www.instagram.com/darien.brito/) |
-[Twitter](https://twitter.com/DarienBrito)
-
-If you would like to go one step further with your support, you can subscribe here:
-[Patreon](https://www.patreon.com/c/darienbrito)
-
-Best,
-Darien
-
-Darien Brito, 2025
+## About the Author
+Developed by Darien Brito, 2025.  
+This tool is part of ongoing efforts to enhance real-time 3D processing in creative applications.
